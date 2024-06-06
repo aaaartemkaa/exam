@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <!--Бауэр А.А.,23ВП2-->
+<head>
+    <title>Настройки фигур</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <h2>Лабораторная работа 5, 3 вариант</h2>
+    <h2>На экране через заданный пользователем интервал в секундах появляются случайные фигуры (случайный цвет, форма, размер). Формы, цвета
+        и диапазон размеров для создания фигур определяются настройками
+        пользователя. При клике левой кнопкой мыши на фигуре, она должна исчезать с
+        экрана. </h2>
+    <h2>Настройки фигур:</h2>
+    <div class="modal">
+        <form action="" id="form">
+            <label for="interval">Интервал (сек):</label>
+            <input class="inp" min="1" max="10" type="number" data-msg="Значение должно быть от 1 до 10"  pattern="^[0-9]+$" id="interval" required>
+            <p class="error-msg"></p>
+            <h3>Выберите фигуры:</h2>
+            <div><input type="checkbox" class="inp-checkBox" id="circle"> <label for="circle">Круг</label></div>
+            <div><input type="checkbox" class="inp-checkBox" id="square"> <label for="square">Квадрат</label></div>
+            <div><input type="checkbox" class="inp-checkBox" id="triangle"> <label for="triangle">Треугольник</label></div>
+            <div><input type="checkbox" class="inp-checkBox" id="paral"> <label for="paral">Паралелограмм</label></div>
+            <h3>Размеры (px):</h2>
+            <label for="minSize">Мин:</label>
+            <input pattern="^[0-9]+$" class="inp" type="number"  data-msg="Значение должно быть от 10 до 100"  min=10 max=101 id="minSize" required>
+            <p class="error-msg"></p>
+            <label for="maxSize">Макс:</label>
+            <input pattern="^[0-9]+$" type="number"  data-msg="Значение должно быть от 10 до 100" class="inp" min=10 max=101 id="maxSize" required>
+            <p class="error-msg"></p>
+            <p class="errorVal"></p>
+            <button id="startBtn" disabled>Старт</button>
+        </form>
+        <button id="resetBtn">Очистить поле</button>
+    </div>
+    <div id="container"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

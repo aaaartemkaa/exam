@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container { 
+    width: 100%; height: 100vh;
+    position: relative;
+    background-color: #f0f0f0;
+    border: solid 2px black;
+    border-radius: 8px
+}
+.shape { 
+    position: absolute;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+label{
+    font-size: 22px;
+}
+
+.error-msg, .errorVal{
+    color: red;
+}
+.overlay{
+    position: fixed;
+    top: 0;right: 0;bottom: 0;left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    z-index: 999;
+}
+.modal{
+    background-color: white;
+    padding: 30px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#startBtn{
+    cursor: pointer;
+    font-size: 20px;
+}
+.inp{
+    font-size: 20px;
+}
