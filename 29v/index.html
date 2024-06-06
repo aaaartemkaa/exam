@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--23ВП1 Шунин Евгений Александрович-->
+<html>
+<head>
+    <title>Анимированные фигуры</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Лабораторная работа 5, 29 вариант, 23ВП1 Шунин Евгений Александрович</h1>
+    <h2>По экрану хаотично перемещаются пронумерованные фигуры. Через
+        определенный интервал времени каждая фигура меняет свой цвет, форму и
+        размер. Наверху страницы размещена таблица с актуальной информацией о
+        фигурах (номер, размер, форма и цвет) и кнопка, позволяющая
+        заблокировать/разблокировать все изменения соответствующей фигуры.</h2>
+    <div>
+        Количество фигур:
+        <input type="number" id="figure-count" value="10" min="1" max="50">
+        <button id="create-figures">Создать фигуры</button>
+    </div>
+    <div id="figures-container"></div>
+    <table id="figures-info">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Размер</th>
+                <th>Форма</th>
+                <th>Цвет</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
